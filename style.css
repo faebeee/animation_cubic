@@ -1,0 +1,271 @@
+body {
+  margin: 0px;
+  padding: 0px;
+}
+.animation {
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+}
+.animation div {
+  position: absolute;
+  animation-fill-mode: forwards;
+}
+.bar1 {
+  background-color: #000411;
+  width: 500px;
+  height: 50px;
+  left: calc(50% - 250px);
+  top: calc(50% - 100px);
+  animation-name: bar;
+  animation-duration: 1s;
+}
+@keyframes bar {
+  from {
+    transform: translateX(300px) translateY(-300px) rotateZ(-45deg);
+  }
+  to {
+    transform: rotateZ(-45deg);
+  }
+}
+.bar2 {
+  background-color: #000411;
+  width: 500px;
+  height: 50px;
+  left: calc(50% - 250px);
+  top: calc(50% + 50px);
+  animation-name: bar2;
+  animation-duration: 1s;
+}
+@keyframes bar2 {
+  from {
+    transform: translateX(-300px) translateY(300px) rotateZ(-45deg);
+  }
+  to {
+    transform: rotateZ(-45deg);
+  }
+}
+.bigcube1 {
+  background-color: #AEB7B3;
+  width: 300px;
+  height: 300px;
+  left: calc(50% - 150px);
+  top: calc(50% - 150px);
+  animation-name: bigcube1;
+  animation-duration: 1s;
+}
+@keyframes bigcube1 {
+  from {
+    transform: translateY(300px) rotateZ(45deg);
+  }
+  to {
+    transform: rotateZ(-45deg);
+  }
+}
+.circle1 {
+  background-color: #160C28;
+  width: 200px;
+  height: 200px;
+  border-radius: 100%;
+  left: calc(50% - 200px);
+  top: calc(50% - 200px);
+  transform: scale(0);
+  animation-name: circle1;
+  animation-duration: 1s;
+  animation-delay: 0.5s;
+}
+@keyframes circle1 {
+  from {
+    transform: scale(0);
+  }
+  to {
+    transform: scale(1);
+  }
+}
+.circle2 {
+  background-color: #160C28;
+  width: 100px;
+  height: 100px;
+  border-radius: 100%;
+  left: calc(50% + 50px);
+  top: calc(50% + 50px);
+  transform: scale(0);
+  animation-name: circle2;
+  animation-duration: 1s;
+  animation-delay: 0.6s;
+}
+@keyframes circle2 {
+  from {
+    transform: scale(0);
+  }
+  to {
+    transform: scale(1);
+  }
+}
+.circle2border {
+  border: solid 15px #EFCB68;
+  width: 150px;
+  height: 150px;
+  border-radius: 100%;
+  left: calc(50% + 10px);
+  top: calc(50% + 10px);
+  transform: scale(0);
+  animation-name: circle2border;
+  animation-duration: 1s;
+  animation-delay: 0.6s;
+}
+@keyframes circle2border {
+  from {
+    transform: scale(0);
+  }
+  to {
+    transform: scale(1);
+  }
+}
+.cube2 {
+  background-color: #EFCB68;
+  width: 200px;
+  height: 200px;
+  left: calc(50% - 100px);
+  top: calc(50% - 100px);
+  box-shadow: 0px 0px 5px #333;
+  transform: scale(0);
+  animation-name: cube2;
+  animation-duration: 1s;
+}
+@keyframes cube2 {
+  from {
+    transform: scale(0) rotate(-275deg);
+  }
+  to {
+    transform: scale(1) rotate(45deg);
+  }
+}
+.cube3 {
+  background: repeating-linear-gradient(-45deg, #AEB7B3, #AEB7B3 10px, #160C28 10px, #160C28 20px);
+  width: 150px;
+  height: 150px;
+  left: calc(50% - 75px);
+  top: calc(50% - 75px);
+  transform: scale(2);
+  animation-name: cube3;
+  animation-duration: 1s;
+}
+@keyframes cube3 {
+  from {
+    transform: scale(2) rotate(45deg);
+  }
+  to {
+    transform: scale(1) rotate(45deg);
+  }
+}
+.cube4 {
+  background: #000411;
+  width: 125px;
+  height: 125px;
+  left: calc(50% - 62px);
+  top: calc(50% - 62px);
+  opacity: 0;
+  animation-name: cube4;
+  animation-duration: 1s;
+  animation-delay: 1s;
+  transform: rotate(45deg);
+}
+@keyframes cube4 {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+.cube5 {
+  background: #e1efe6;
+  width: 80px;
+  height: 80px;
+  left: calc(50% - 40px);
+  top: calc(50% - 40px);
+  animation-name: cube5;
+  animation-duration: 1s;
+}
+@keyframes cube5 {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+.circle1small {
+  background: #000411;
+  width: 20px;
+  height: 20px;
+  border-radius: 100%;
+  opacity: 0;
+  left: calc(50% - 10px);
+  top: calc(50% - 10px);
+  transform: translate3d(0, -250px, 0);
+  animation-name: bullet;
+  animation-duration: 1s;
+  animation-delay: 1s;
+}
+.circle2small {
+  background: #000411;
+  width: 20px;
+  height: 20px;
+  border-radius: 100%;
+  opacity: 0;
+  left: calc(50% - 10px);
+  top: calc(50% - 10px);
+  transform: translate3d(0, -210px, 0);
+  animation-name: bullet;
+  animation-duration: 1s;
+  animation-delay: 1.1s;
+}
+.circle3small {
+  background: #000411;
+  width: 20px;
+  height: 20px;
+  border-radius: 100%;
+  opacity: 0;
+  left: calc(50% - 10px);
+  top: calc(50% - 10px);
+  transform: translate3d(0, 210px, 0);
+  animation-name: bullet;
+  animation-duration: 1s;
+  animation-delay: 1.2s;
+}
+.circle4small {
+  background: #000411;
+  width: 20px;
+  height: 20px;
+  border-radius: 100%;
+  opacity: 0;
+  left: calc(50% - 10px);
+  top: calc(50% - 10px);
+  transform: translate3d(0, 250px, 0);
+  animation-name: bullet;
+  animation-duration: 1s;
+  animation-delay: 1.3s;
+}
+.circle5small {
+  background: #000411;
+  width: 20px;
+  height: 20px;
+  border-radius: 100%;
+  opacity: 0;
+  left: calc(50% - 10px);
+  top: calc(50% - 10px);
+  transform: translate3d(0, 290px, 0);
+  animation-name: bullet;
+  animation-duration: 1s;
+  animation-delay: 1.4s;
+}
+@keyframes bullet {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
